@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Fancy Text Generator</title>
+  <meta name="description" content="Contact the Fancy Text Generator team. Send us your questions, feedback, or suggestions.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.example.com/contact.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://pl30216445.effectivecpmnetwork.com/c4/4b/96/c44b968f12d78d944d8225c5de5a3bef.js"></script>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="/" class="nav-brand" aria-label="Fancy Text Generator Home">
+        <img src="logo.png" alt="" class="nav-logo"> <span>FancyText</span>
+      </a>
+      <button id="navToggle" class="nav-hamburger" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="blog.html"><i class="fas fa-book-open"></i> Blog</a></li>
+        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode"></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+    <p class="last-updated">We'd love to hear from you!</p>
+
+    <p>Have a question, suggestion, or feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+    <form class="contact-form" id="contactForm">
+      <div class="input-group-wrap">
+        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
+      <div class="input-group-wrap">
+        <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+      </div>
+      <div class="input-group-wrap">
+        <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+        <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+      </div>
+      <div class="input-group-wrap">
+        <label for="message"><i class="fas fa-comment"></i> Message</label>
+        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="sendBtn"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+
+    <div id="contactSuccess" class="contact-success" style="display:none;">
+      <div class="contact-success-icon"><i class="fas fa-circle-check"></i></div>
+      <h3>Thank You!</h3>
+      <p>Your message has been sent successfully. We'll get back to you as soon as possible.</p>
+      <button class="btn btn-outline" onclick="resetContactForm()"><i class="fas fa-redo"></i> Send Another Message</button>
+    </div>
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('sendBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      setTimeout(function() {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('contactSuccess').style.display = 'block';
+      }, 1200);
+    });
+
+    function resetContactForm() {
+      document.getElementById('contactForm').reset();
+      document.getElementById('contactForm').style.display = '';
+      document.getElementById('contactSuccess').style.display = 'none';
+      var btn = document.getElementById('sendBtn');
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    }
+    </script>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="https://www.effectivecpmnetwork.com/tkcpkgzti?key=78b3fcf04097d546153bc68dba503142" class="smartlink-btn" target="_blank" rel="noopener"><i class="fas fa-sparkles"></i> More Free Tools</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4><i class="fas fa-sparkles"></i> FancyText</h4>
+        <p>Generate stylish Unicode fonts for your social media profiles.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="/"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="blog.html"><i class="fas fa-book-open"></i> Blog</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy-policy.html"><i class="fas fa-shield-halved"></i> Privacy Policy</a>
+        <a href="terms-of-service.html"><i class="fas fa-file-lines"></i> Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><i class="far fa-copyright"></i> 2025 Fancy Text Generator. All rights reserved.</div>
+  </footer>
+
+  <script src="https://pl30216447.effectivecpmnetwork.com/54/73/c0/5473c09a9fdd7e15246adcd0d44f6556.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
